@@ -2,6 +2,7 @@ package platzi.play;
 
 import platzi.play.plataforma.Usuario;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
@@ -11,10 +12,12 @@ public class Main {
 
         Pelicula pelicula = new Pelicula();
         pelicula.titulo = " el señor de los anillos ";
-        pelicula.anioEstreno = 2001;
+        pelicula.fechaEstreno = LocalDate.of(2026,10,15);
         pelicula.genero = " fantasia " ;
         pelicula.calificar(4.5);
 
+
+        System.out.println(pelicula.fichaTecnica());
         Usuario usuario = new Usuario();
                 usuario.nombre =" juan";
  usuario.ver(pelicula);
