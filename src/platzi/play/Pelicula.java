@@ -1,11 +1,14 @@
 package platzi.play;
 
+import java.time.LocalDate;
+
 public class Pelicula {
     public String titulo;
 //    public  string descripcion;
     public int duracion;
     public String genero;
     public int anioEstreno;
+    public LocalDate fechaEstreno;
     public  boolean disponible;
     public  double calificacion;
 
