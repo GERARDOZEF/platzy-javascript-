@@ -17,7 +17,7 @@ public class Pelicula {
     }
 
     public  String fichaTecnica(){
-        return titulo + " + (" + anioEstreno +")\n"
+        return titulo + " + (" + fechaEstreno.getYear() +")\n"
                 + "genero " + genero +
                 "calificacion\n" + calificacion + "/5";
 
